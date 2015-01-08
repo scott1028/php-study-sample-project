@@ -34,4 +34,27 @@
     var_dump($a);
     var_dump($col_value);
     var_dump($link);
+
+    // test reflection function
+    class C
+    {
+        private function privateMethod()
+        {
+            
+        }
+        public function publicMethod()
+        {
+            
+        }
+        public function __construct()
+        {
+            echo '$this:';
+            var_dump(get_class_methods($this));
+            echo 'C (inside class):';
+            var_dump(get_class_methods('C'));
+        }
+    }
+    $c = new C;
+
+    var_dump(get_class_methods($c));
 ?>

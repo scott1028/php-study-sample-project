@@ -40,3 +40,8 @@ Xdebug Install
         xdebug.remote_host=127.0.0.1 xdebug.remote_port=9000
 
     sudo service apache2 restart
+
+Xdebug Chrome Plugin
+====================
+
+    https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc
