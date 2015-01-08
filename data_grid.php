@@ -1,6 +1,6 @@
 <?php
     // Connecting, selecting database
-    $link = mysql_connect('192.168.1.90', 'username', 'password')
+    $link = mysql_connect('127.0.0.1', 'my_user', 'my_password')
         or die('Could not connect: ' . mysql_error());
     echo 'Connected successfully';
     mysql_select_db('ssd_data') or die('Could not select database');
@@ -25,4 +25,13 @@
 
     // Closing connection
     mysql_close($link);
+
+    // phpinfo();
+
+    $a=[1,2,3,4];
+
+    // PHP Debug dump variables
+    var_dump($a);
+    var_dump($col_value);
+    var_dump($link);
 ?>
